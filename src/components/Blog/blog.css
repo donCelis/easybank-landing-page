@@ -1,0 +1,19 @@
+.blog {
+  background: var(--very-light-gray);
+  padding: 5rem 0;
+}
+.blog img {
+  object-fit: cover;
+}
+.card {
+  border-color: transparent;
+}
+.blog article small {
+  color: var(--grayish-blue);
+}
+.blog article h5 {
+  margin-top: 0.8rem;
+}
+.blog article p {
+  color: var(--grayish-blue);
+}

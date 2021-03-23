@@ -1,14 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
 //styles
-import "./styles/main.css"
+import "./styles/main.css";
+//components
+import Navbar from "./components/Navbar";
+import NextGeneration from "./components/NextGeneration";
+import Features from "./components/Features";
+import Blog from "./components/Blog";
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Multimedia</h1>
+    <>
+      <Navbar />
+      <NextGeneration />
+      <Features />
+      <Blog />
+    </>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,15 @@
+.features{
+  background: var(--light-grayish-blue);
+}
+.features .container > article {
+  margin-bottom: 4rem;
+}
+.features h4 {
+  color: var(--dark-blue);
+  margin: 2rem 0;
+}
+.features p {
+  color: var(--grayish-blue);
+  font-size: 1.2em;
+  margin: 2rem 0;
+}

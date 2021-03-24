@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import NextGeneration from "./components/NextGeneration";
 import Features from "./components/Features";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <NextGeneration />
       <Features />
       <Blog />
+      <Footer />
     </>
   </React.StrictMode>,
   document.getElementById("root")

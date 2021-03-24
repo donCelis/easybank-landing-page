@@ -2,6 +2,17 @@
   background: var(--very-light-gray);
   padding: 5rem 0;
 }
+.blog .card {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: transform ease 0.2s;
+}
+.blog .card:hover{
+  transform: translateY(-10px);
+}
+.blog .card:hover h5 {
+  color: var(--lime-green);
+}
 .blog img {
   object-fit: cover;
 }
@@ -13,6 +24,7 @@
 }
 .blog article h5 {
   margin-top: 0.8rem;
+  transition: color ease 0.2s;
 }
 .blog article p {
   color: var(--grayish-blue);

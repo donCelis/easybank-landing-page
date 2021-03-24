@@ -3,7 +3,7 @@ import logo from "../../images/logo.svg";
 
 export default function Navbar() {
   return (
-    <header className="py-3">
+    <header className="py-2">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <a className="navbar-brand" href="#">

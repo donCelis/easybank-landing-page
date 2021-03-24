@@ -1,0 +1,27 @@
+footer{
+  background: var(--dark-blue);
+  color: var(--grayish-blue);
+}
+footer .logo{
+  filter: brightness(10);
+}
+.icons-social a{
+  margin-right: 1rem;
+}
+.icons-social a:last-child{
+  margin-right: 0;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+.links a{
+  margin-bottom: 1rem;
+  transition: color ease 0.2s;
+}
+.links a:hover{
+  color: var(--lime-green);
+}

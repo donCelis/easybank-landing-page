@@ -8,27 +8,31 @@ import photo4 from "../../images/image-confetti.jpg";
 let data = [
   {
     img: photo1,
-    caption: "",
-    title: "Hola Mundo",
-    text: "",
+    caption: "By Claire Robinson",
+    title: "Receive money in any currency with no fees",
+    text:
+      "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
   },
   {
     img: photo2,
-    caption: "",
-    title: "",
-    text: "",
+    caption: "By Wilson Hutton",
+    title: "Treat yourself without worrying about money",
+    text:
+      "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
   },
   {
     img: photo3,
-    caption: "",
-    title: "",
-    text: "",
+    caption: "By Wilson Hutton",
+    title: "Take your Easybank card wherever you go",
+    text:
+      "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …",
   },
   {
     img: photo4,
-    caption: "",
-    title: "",
-    text: "",
+    caption: "By Claire Robinson",
+    title: "Our invite-only Beta accounts are now live!",
+    text:
+      "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...",
   },
 ];
 
@@ -36,7 +40,7 @@ function Card({ data }) {
   return (
     <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-4">
       <article className="card">
-        <img className="card-img-top" src={data.img} alt="" />
+        <img className="card-img-top" src={data.img} alt={data.title} />
         <div className="card-body">
           <small>{data.caption}</small>
           <h5>{data.title}</h5>
@@ -53,8 +57,8 @@ export default function Blog() {
       <div className="container">
         <h2 className="mb-5">Latest Articles</h2>
         <div className="row">
-          {data.map((element, key) => (
-            <Card data={element} id={key} />
+          {data.map((element, id) => (
+            <Card key={id} data={element} />
           ))}
           {/* <Card {...element} id={key} /> */}
         </div>

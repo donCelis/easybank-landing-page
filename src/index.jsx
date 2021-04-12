@@ -3,22 +3,13 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 //styles
 import "./styles/main.css";
-//components
-import Navbar from "./components/Navbar";
-import NextGeneration from "./components/NextGeneration";
-import Features from "./components/Features";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+
+//pages
+import Home from "./pages/home";
 
 ReactDOM.render(
   <React.StrictMode>
-    <>
-      <Navbar />
-      <NextGeneration />
-      <Features />
-      <Blog />
-      <Footer />
-    </>
+    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );
